@@ -11,7 +11,30 @@
 		072A07502753AB1A007F51D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A074F2753AB1A007F51D9 /* ContentView.swift */; };
 		072A07522753AB1D007F51D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072A07512753AB1D007F51D9 /* Assets.xcassets */; };
 		072A07552753AB1D007F51D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072A07542753AB1D007F51D9 /* Preview Assets.xcassets */; };
+		07EDDE002753AFD4005F7D4D /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDDFF2753AFD4005F7D4D /* data.framework */; };
+		07EDDE012753AFD4005F7D4D /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDDFF2753AFD4005F7D4D /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07EDDE042753AFD8005F7D4D /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDE032753AFD8005F7D4D /* domain.framework */; };
+		07EDDE052753AFD8005F7D4D /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDE032753AFD8005F7D4D /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07EDDE072753AFDC005F7D4D /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDE062753AFDC005F7D4D /* presentation.framework */; };
+		07EDDE082753AFDC005F7D4D /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDDE062753AFDC005F7D4D /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA29621976AD9BCE51A46F49 /* Pods_MuseumAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAC49A5685208565444342E /* Pods_MuseumAppSwift.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07EDDE022753AFD4005F7D4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07EDDE082753AFDC005F7D4D /* presentation.framework in Embed Frameworks */,
+				07EDDE052753AFD8005F7D4D /* domain.framework in Embed Frameworks */,
+				07EDDE012753AFD4005F7D4D /* data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		072A074A2753AB1A007F51D9 /* MuseumAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +42,12 @@
 		072A074F2753AB1A007F51D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		072A07512753AB1D007F51D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		072A07542753AB1D007F51D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07EDDDFF2753AFD4005F7D4D /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EDDE032753AFD8005F7D4D /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EDDE062753AFDC005F7D4D /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAC49A5685208565444342E /* Pods_MuseumAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuseumAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAE5363BB99CD45CC324EFB /* Pods-MuseumAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumAppSwift.release.xcconfig"; path = "Target Support Files/Pods-MuseumAppSwift/Pods-MuseumAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		FD621EF7012D40F42365407B /* Pods-MuseumAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-MuseumAppSwift/Pods-MuseumAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EDDE002753AFD4005F7D4D /* data.framework in Frameworks */,
+				07EDDE042753AFD8005F7D4D /* domain.framework in Frameworks */,
+				07EDDE072753AFDC005F7D4D /* presentation.framework in Frameworks */,
+				FA29621976AD9BCE51A46F49 /* Pods_MuseumAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +70,8 @@
 			children = (
 				072A074C2753AB1A007F51D9 /* MuseumAppSwift */,
 				072A074B2753AB1A007F51D9 /* Products */,
+				48926C0DE654DB32FB3A229A /* Pods */,
+				FE44EBFA27BF42C207E3E20D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +102,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		48926C0DE654DB32FB3A229A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD621EF7012D40F42365407B /* Pods-MuseumAppSwift.debug.xcconfig */,
+				DFAE5363BB99CD45CC324EFB /* Pods-MuseumAppSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE44EBFA27BF42C207E3E20D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07EDDE062753AFDC005F7D4D /* presentation.framework */,
+				07EDDE032753AFD8005F7D4D /* domain.framework */,
+				07EDDDFF2753AFD4005F7D4D /* data.framework */,
+				DFAC49A5685208565444342E /* Pods_MuseumAppSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 072A07582753AB1D007F51D9 /* Build configuration list for PBXNativeTarget "MuseumAppSwift" */;
 			buildPhases = (
+				2942A19D0948AAE91652F00B /* [CP] Check Pods Manifest.lock */,
 				072A07462753AB1A007F51D9 /* Sources */,
 				072A07472753AB1A007F51D9 /* Frameworks */,
 				072A07482753AB1A007F51D9 /* Resources */,
+				07EDDE022753AFD4005F7D4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +188,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2942A19D0948AAE91652F00B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuseumAppSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		072A07462753AB1A007F51D9 /* Sources */ = {
@@ -263,6 +345,7 @@
 		};
 		072A07592753AB1D007F51D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD621EF7012D40F42365407B /* Pods-MuseumAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +375,7 @@
 		};
 		072A075A2753AB1D007F51D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFAE5363BB99CD45CC324EFB /* Pods-MuseumAppSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
